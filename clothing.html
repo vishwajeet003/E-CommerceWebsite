@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      .product {
+        background: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: inline-block;
+        width: calc(33% - 40px); /* Three products per row */
+        vertical-align: top;
+      }
+      .product img {
+        max-width: 100%;
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 5px; /* Rounded corners for images */
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      .popular-products {
+        margin-top: 40px;
+      }
+      @media (max-width: 768px) {
+        .product {
+          width: calc(50% - 40px); /* Two products per row on smaller screens */
+        }
+      }
+      @media (max-width: 480px) {
+        .product {
+          width: calc(
+            100% - 40px
+          ); /* One product per row on very small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Clothing Store</h1>
+    </header>
+
+    <div class="container">
+      <h2>Our Products</h2>
+
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/71V5gEc8YVL._SY741_.jpg"
+          alt="Stylish Shirt"
+        />
+        <h3>Stylish Shirt</h3>
+        <p>Price: $29.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/51u7lXu3VsL._AC_UL480_FMwebp_QL65_.jpg"
+          alt="Comfortable Jeans"
+        />
+        <h3>Comfortable Jeans</h3>
+        <p>Price: $49.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://m.media-amazon.com/images/I/61pCn6DowvS._SY741_.jpg"
+          alt="Warm Jacket"
+        />
+        <h3>Warm Jacket</h3>
+        <p>Price: $89.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="popular-products">
+        <h2>Popular Products</h2>
+
+        <div class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/61AYemVvKRL._SX679_.jpg"
+            alt="Trendy Hat"
+          />
+          <h3>Trendy Hat</h3>
+          <p>Price: $19.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/61uv-CykXCL._SX695_.jpg"
+            alt="Casual Shoes"
+          />
+          <h3>Casual Shoes</h3>
+          <p>Price: $59.99</p>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="https://m.media-amazon.com/images/I/51YVGM+3vXL._SX679_.jpg"
+            alt="Fashion Sunglasses"
+          />
+          <h3>Fashion Sunglasses</h3>
+          <p>Price: $29.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Clothing Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
